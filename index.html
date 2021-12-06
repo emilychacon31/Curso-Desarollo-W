@@ -7,33 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Tabla</h1>
-    <table border="1px">
-        <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Edad</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Carolina</th>
-                <th>Perez</th>
-                <th>18</th>
-            </tr>
-            <tr>
-                <th>Luis</th>
-                <th>Arias</th>
-                <th>20</th>
-            </tr>
-            <tr>
-                <th>Alex</th>
-                <th>Garcia</th>
-                <th>25</th>
-            </tr>
-        </tbody>
-    </table>
+    <h1> Adopciones Costa Rica</h1>
+    <p>Pagina en Facebook</p>
+    <a href="https://www.facebook.com/animalesdeasis/">Adopciones Costa Rica</a>
+    
     <img src=imagenes/golden.jpg>
     <p>El <i> retriever o cobrador</i> dorado es una raza de perro que se desarrolló alrededor de 1850 en el Reino Unido,
          más concretamente en <b>Escocia.</b>Con sus características de perro cobrador, sabueso, bloodhound y spaniel de agua, 
@@ -43,20 +20,42 @@
           que hace que sean perros de apoyo muy populares. También les gusta trabajar, ya sea cazando aves o yendo a buscar las zapatillas de su propietario...
          <i> golden retrievers</i> no ladran a menudo, y carecen de instintos de guarda, por lo que no cuentes con ellos como buenos perros de guarda. No obstante, 
          si se acerca alguien extraño, algunos golden retrievers te lo harán saber. </p>
+        
+         <h2>Adopcion</h2>
+         <form action="/action_page.php">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" value="nombre"><br>
+            <label for="lname">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname" value="apellidos"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+          </form>
 
-    <h2>Peliculas favoritas</h2>
+        <p>Fecha de nacimiento</p>
+        <form action="/action_page.php">
+            <label for="birthday">Fecha:</label>
+             <input type="date" id="birthday" name="birthday">
+            <input type="submit" value="Submit">
 
-    <ol>
-        <li>Harry potter</li>
-        <li>La la land</li>
-        <li>Grease</li>
-    </ol>
-    <h3>Hobbies</h3>
+        <p>correo electronico:</p>
+        <form action="/action_page.php">
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit">
+        </form>
 
-    <ul>
-        <li>Leer</li>
-        <li>Ver Series</li>
-    </ul>
+        <p>Estado civil</p>
+        <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">Soltero</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">Casado</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">Divorciado</label>
+</form>
+</form>
+
+    
     
 </body>
 </html>
